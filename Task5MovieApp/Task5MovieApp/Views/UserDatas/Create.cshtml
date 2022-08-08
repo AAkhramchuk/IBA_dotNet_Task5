@@ -1,0 +1,73 @@
+﻿@model Task5MovieApp.Models.UserDataViewModel
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Create</h1>
+
+<h4>UserData</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Movie.ProducerName" class="control-label">Producer Name</label>
+                <input asp-for="Movie.ProducerName" class="form-control" />
+                <span asp-validation-for="Movie.ProducerName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Movie.ProducerSurname" class="control-label">Producer Surname</label>
+                <input asp-for="Movie.ProducerSurname" class="form-control" />
+                <span asp-validation-for="Movie.ProducerSurname" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Movie.MovieName" class="control-label">Movie Name</label>
+                <input asp-for="Movie.MovieName" class="form-control" />
+                <span asp-validation-for="Movie.MovieName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Movie.MovieYear" class="control-label">Movie Year</label>
+                <input asp-for="Movie.MovieYear" class="form-control" />
+                <span asp-validation-for="Movie.MovieYear" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Movie.MovieRating" class="control-label">Movie Rating</label>
+                <input asp-for="Movie.MovieRating" class="form-control" />
+                <span asp-validation-for="Movie.MovieRating" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Genre" class="control-label">Movie Genre</label>
+                <select asp-for="Genre" asp-items="ViewBag.Genre" class="form-control"></select>
+                <span asp-validation-for="Genre" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="UserData.UserProfile.Name" class="control-label"></label>
+                <input asp-for="UserData.UserProfile.Name" class="form-control" />
+                <span asp-validation-for="UserData.UserProfile.Name" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="UserData.UserComment" class="control-label"></label>
+                <input asp-for="UserData.UserComment" class="form-control" />
+                <span asp-validation-for="UserData.UserComment" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="UserData.MovieRating" class="control-label"></label>
+                <input asp-for="UserData.MovieRating" class="form-control" />
+                <span asp-validation-for="UserData.MovieRating" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

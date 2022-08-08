@@ -1,0 +1,23 @@
+{
+  "AuthenticationOptions": {
+    "AuthenticationProviderKey": "IdentityApiKey",
+    "AllowedScopes": []
+  },
+  "All": null,
+  "parts": {
+    "DownstreamPathTemplate": "/api/movies",
+    "DownstreamScheme": "https",
+    "DownstreamHostAndPorts": [
+      {
+        "Host”": "localhost",
+        "Port”": "5002"
+      }
+    ],
+    "UpstreamPathTemplate": "/movies",
+    "UpstreamHttpMethod": [ "GET", "POST", "PUT" ],
+    "AuthenticationOptions": {
+      "AuthenticationProviderKey": "IdentityApiKey",
+      "AllowedScopes": []
+    }
+  }
+}

@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32630.192
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Task5MovieApp", "Task5MovieApp\Task5MovieApp.csproj", "{277467EB-B3C0-4751-AAED-F1F2228815E7}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ApiGateway", "ApiGateway\ApiGateway.csproj", "{7862A868-9E91-454C-A992-8826E5B42D03}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Task4MovieLibraryApi", "..\Task4MovieLibraryApi\Task4MovieLibraryApi\Task4MovieLibraryApi.csproj", "{4AA160FC-8773-4B07-B7CF-79B1A4551FFB}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Domain", "..\Task4MovieLibraryApi\Domain\Domain.csproj", "{15EE2DE9-CF66-47D9-87E3-2744DDB67C6A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IdentityServer", "..\IdentityServer\IdentityServer\IdentityServer.csproj", "{BF510C6D-D152-4DD9-BC93-B5707358424D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataAccess.EFCore", "..\Task4MovieLibraryApi\DataAccess.EFCore\DataAccess.EFCore.csproj", "{866A3277-EAAB-4AED-99F7-A9931EFC728E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{277467EB-B3C0-4751-AAED-F1F2228815E7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{277467EB-B3C0-4751-AAED-F1F2228815E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{277467EB-B3C0-4751-AAED-F1F2228815E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{277467EB-B3C0-4751-AAED-F1F2228815E7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7862A868-9E91-454C-A992-8826E5B42D03}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7862A868-9E91-454C-A992-8826E5B42D03}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7862A868-9E91-454C-A992-8826E5B42D03}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7862A868-9E91-454C-A992-8826E5B42D03}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4AA160FC-8773-4B07-B7CF-79B1A4551FFB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4AA160FC-8773-4B07-B7CF-79B1A4551FFB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4AA160FC-8773-4B07-B7CF-79B1A4551FFB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4AA160FC-8773-4B07-B7CF-79B1A4551FFB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{15EE2DE9-CF66-47D9-87E3-2744DDB67C6A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{15EE2DE9-CF66-47D9-87E3-2744DDB67C6A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{15EE2DE9-CF66-47D9-87E3-2744DDB67C6A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{15EE2DE9-CF66-47D9-87E3-2744DDB67C6A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BF510C6D-D152-4DD9-BC93-B5707358424D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BF510C6D-D152-4DD9-BC93-B5707358424D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BF510C6D-D152-4DD9-BC93-B5707358424D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BF510C6D-D152-4DD9-BC93-B5707358424D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{866A3277-EAAB-4AED-99F7-A9931EFC728E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{866A3277-EAAB-4AED-99F7-A9931EFC728E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{866A3277-EAAB-4AED-99F7-A9931EFC728E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{866A3277-EAAB-4AED-99F7-A9931EFC728E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FE3DBE2A-15CA-4317-8CE0-EA16BBA7B371}
+	EndGlobalSection
+EndGlobal

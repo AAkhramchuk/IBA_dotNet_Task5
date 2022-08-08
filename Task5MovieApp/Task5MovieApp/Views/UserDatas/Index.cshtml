@@ -1,0 +1,71 @@
+﻿@model IEnumerable<Task5MovieApp.Models.UserDataViewModel>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Genre.MovieGenre)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Movie.ProducerName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Movie.ProducerSurname)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Movie.MovieName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Movie.MovieYear)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Movie.MovieRating)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.UserDataList)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Genre.MovieGenre)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Movie.ProducerName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Movie.ProducerSurname)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Movie.MovieName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Movie.MovieYear)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Movie.MovieRating)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.UserDataList)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.UserDataID">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.UserDataID">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.UserDataID">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
